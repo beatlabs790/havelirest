@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haveli Restaurant | Patna | A Royal Culinary Experience</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to Haveli Restaurant in Khagaul, Patna. Experience premium royal dining with authentic Indian cuisine. Pricing: ₹200–400 per person. Call 07281092285.">
+    <meta name="keywords" content="Haveli Restaurant, Patna, Khagaul, Restaurant in Patna, Family Dining Patna, Bihar Food, Best Restaurant Patna, BeatLabs">
+    <meta name="author" content="BeatLabs">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- 1. Page Loader Overlay -->
+    <div id="page-loader" class="loader-overlay">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <!-- Royal Palace/Haveli Arch SVG -->
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 C68,15 76,28 78,35 C80,31 85,28 90,28 C87,42 87,58 90,75 C70,75 65,70 50,75 C35,70 30,75 10,75 C13,58 13,42 10,28 C15,28 20,31 22,35 C24,28 32,15 50,15 Z" fill="none" stroke="currentColor" stroke-width="4"/>
+                    <path d="M50,15 C50,15 47,40 25,48" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="2 2"/>
+                    <path d="M50,15 C50,15 53,40 75,48" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="2 2"/>
+                    <rect x="42" y="55" width="16" height="20" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
+                </svg>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Live Glassmorphism Backdrop -->
+    <div class="backdrop-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+    <!-- Interactive Particle Overlay Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- 3. Premium Sticky Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="nav-brand">
+                <!-- Arch SVG -->
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 C68,15 76,28 78,35 C80,31 85,28 90,28 C87,42 87,58 90,75 C70,75 65,70 50,75 C35,70 30,75 10,75 C13,58 13,42 10,28 C15,28 20,31 22,35 C24,28 32,15 50,15 Z" fill="currentColor"/>
+                    <rect x="44" y="58" width="12" height="17" rx="6" fill="#070608"/>
+                </svg>
+                <div class="brand-name">
+                    HAVELI
+                    <span class="brand-subtitle">Restaurant</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="devs.html">Developers</a></li>
+                <li><a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="nav-btn-zomato">Order Online 🔴</a></li>
+                <li><a href="tel:07281092285" class="nav-btn">Book Table</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 4. Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content reveal reveal-fade">
+                <div class="hero-subtitle-badge">
+                    <span></span> A Patna Landmark
+                </div>
+                <h1 id="hero-heading" class="hero-title">A Feast Fit For Royalty</h1>
+                <p class="hero-description">Indulge in a premium dining experience at Haveli. We combine traditional Bihari hospitality with rich, aromatic North Indian delicacies in a majestic glass-themed ambiance.</p>
+                <div class="hero-btns">
+                    <a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="nav-btn-zomato" style="padding: 0.8rem 1.8rem;">Order on Zomato 🔴</a>
+                    <a href="menu.html" class="nav-btn">Explore Menu</a>
+                    <a href="tel:07281092285" class="btn-secondary">Reserve A Table</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">₹200+</span>
+                        <span class="stat-label">Affordable Premium</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">33+</span>
+                        <span class="stat-label">Google Reviewers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">5★</span>
+                        <span class="stat-label">Elite Hospitality</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper reveal reveal-scale">
+                <div class="hero-image-glass glass">
+                    <img src="assets/images/exterior/unnamed (10).jpg" alt="Haveli Restaurant Facade Neon Sign at Night">
+                    
+                    <!-- Floating Badges -->
+                    <div class="floating-card fc-1 glass">
+                        <div class="fc-icon">🍛</div>
+                        <div class="fc-text">
+                            <h4>Signature Spices</h4>
+                            <p>Authentic Recipes</p>
+                        </div>
+                    </div>
+                    <div class="floating-card fc-2 glass">
+                        <div class="fc-icon">✨</div>
+                        <div class="fc-text">
+                            <h4>Royal Ambiance</h4>
+                            <p>Cozy Seating Booths</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. About / Story Section -->
+    <section class="section" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-images reveal reveal-scale">
+                    <div class="about-img-box tall">
+                        <img src="assets/images/interior/unnamed (13).jpg" alt="Haveli Restaurant Cozy Seating Dining Layout" class="zoomable">
+                    </div>
+                    <div class="about-img-box">
+                        <img src="assets/images/interior/unnamed (14).jpg" alt="Haveli Reception Counter Green Grass Wall Decoration" class="zoomable">
+                    </div>
+                    <div class="about-img-box">
+                        <img src="assets/images/exterior/unnamed (12).jpg" alt="Haveli Restaurant Grand Entrance decorated with flowers" class="zoomable">
+                    </div>
+                </div>
+                
+                <div class="about-content reveal reveal-up">
+                    <span class="section-tag">Our Legacy</span>
+                    <h2 class="section-title">The Legend of Haveli</h2>
+                    <div class="section-divider" style="margin: 0 0 20px 0;"></div>
+                    <p>Nestled in the heart of Patna's vibrant Phulwarisharif area, Haveli Restaurant is a premium dining destination designed to look like a modern palace. Our signature interior boasts beautiful glass features, glowing golden frames, and soft booth seating ideal for families, couples, and grand parties.</p>
+                    <p>We pride ourselves on sourcing the freshest ingredients and grinding our masalas in-house to capture the authentic, traditional flavor of local Indian cuisine. Whether it's our signature Haveli Special Chicken, butter paneer masala, or fresh tandoori kulchas, every dish is crafted to perfection.</p>
+                    
+                    <div class="about-features">
+                        <div class="feat-card glass">
+                            <span>⚜️</span>
+                            <h4>Royal Hospitality</h4>
+                            <p>Every guest is welcomed with royal respect and top-tier service.</p>
+                        </div>
+                        <div class="feat-card glass">
+                            <span>🧼</span>
+                            <h4>Ultra Hygienic</h4>
+                            <p>Cleanliness and hygiene standards monitored under strict safety rules.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Our Royal Ambiance -->
+    <section class="section" id="ambiance">
+        <div class="section-container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-tag">Ambiance Highlights</span>
+                <h2 class="section-title">Interior & Exterior Ambiance</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="menu-featured-grid reveal reveal-scale">
+                <!-- Card 1 -->
+                <div class="menu-card glass">
+                    <div class="menu-card-img-wrapper">
+                        <img src="assets/images/interior/unnamed (11).jpg" alt="Haveli Special Party Zone Decor" style="filter: brightness(0.9) contrast(1.1);">
+                        <span class="menu-card-tag veg" style="background: rgba(212,175,55,0.15); border-color: var(--primary); color: var(--primary);">Interior</span>
+                    </div>
+                    <div class="menu-card-header">
+                        <h3 class="menu-card-title">Cozy Celebration Zone</h3>
+                        <span class="menu-card-price">Party Booth</span>
+                    </div>
+                    <p class="menu-card-desc">Our beautifully decorated party booths with balloon backdrops are perfect for celebrating birthdays, anniversaries, and small private get-togethers.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="menu-card glass">
+                    <div class="menu-card-img-wrapper">
+                        <img src="assets/images/interior/unnamed (13).jpg" alt="Haveli Luxury Dining Booths" style="filter: hue-rotate(15deg) brightness(0.85);">
+                        <span class="menu-card-tag veg" style="background: rgba(212,175,55,0.15); border-color: var(--primary); color: var(--primary);">Interior</span>
+                    </div>
+                    <div class="menu-card-header">
+                        <h3 class="menu-card-title">Luxury Seating Booths</h3>
+                        <span class="menu-card-price">Dining Area</span>
+                    </div>
+                    <p class="menu-card-desc">Enjoy private, cozy dining with our luxurious high-back booths. Elegant partition screens ensure a comfortable and grand family dinner experience.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="menu-card glass">
+                    <div class="menu-card-img-wrapper">
+                        <img src="assets/images/exterior/unnamed (10).jpg" alt="Haveli Grand Palace Facade at Night" style="filter: saturate(1.2) sepia(0.2) contrast(1.1);">
+                        <span class="menu-card-tag non-veg" style="background: rgba(255,71,87,0.15); border-color: var(--accent); color: var(--accent);">Exterior</span>
+                    </div>
+                    <div class="menu-card-header">
+                        <h3 class="menu-card-title">Grand Facade & Entrance</h3>
+                        <span class="menu-card-price">Palace View</span>
+                    </div>
+                    <p class="menu-card-desc">Patna's architectural dining landmark lit up with vibrant neon lights, welcoming guests with a palace-style grand presence night and day.</p>
+                </div>
+            </div>
+            
+    </section>
+
+    <!-- 7. Specialties / Why Dine With Us Section -->
+    <section class="section" id="specialties">
+        <div class="section-container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-tag">Our Pride</span>
+                <h2 class="section-title">The Royal Standards</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="specs-grid">
+                <!-- Card 1 -->
+                <div class="spec-card glass reveal reveal-left">
+                    <div class="spec-icon-wrapper">🏺</div>
+                    <h3>Authentic Bihari Swad</h3>
+                    <p>We source authentic ingredients and grind our masalas in-house using traditional methods to capture authentic local flavors.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="spec-card glass reveal reveal-up">
+                    <div class="spec-icon-wrapper">✨</div>
+                    <h3>Glass-Themed Ambiance</h3>
+                    <p>Dine inside our beautiful neon-lit, glass-partitioned private booths designed for families and celebrations.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="spec-card glass reveal reveal-right">
+                    <div class="spec-icon-wrapper">🛵</div>
+                    <h3>Superfast Delivery</h3>
+                    <p>Partnered with Zomato to bring steaming hot local delicacies straight to your home in Phulwarisharif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Signature Dishes Showcase Section -->
+    <section class="section" id="signature">
+        <div class="section-container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-tag">Chef's Recommendations</span>
+                <h2 class="section-title">Signature Delicacies</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="signature-grid">
+                <!-- Dish 1 -->
+                <div class="sig-card glass reveal reveal-left">
+                    <div class="sig-img-box">
+                        <img src="assets/images/food/chicken_dehati.png" alt="Haveli Chicken Dehati">
+                        <span class="sig-badge">Most Popular</span>
+                        <span class="sig-price">₹200</span>
+                    </div>
+                    <div class="sig-info">
+                        <span class="sig-type-tag non-veg">🔴 Non-Veg</span>
+                        <h3 class="sig-title">Chicken Dehati</h3>
+                        <p class="sig-desc">Traditional Bihar country chicken slow-cooked with whole spices, whole garlic bulbs, and a rich, spicy oil-infused gravy.</p>
+                        <a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="sig-order-btn">Order on Zomato 🛒</a>
+                    </div>
+                </div>
+                
+                <!-- Dish 2 -->
+                <div class="sig-card glass reveal reveal-up">
+                    <div class="sig-img-box">
+                        <img src="assets/images/food/paneer_masala.png" alt="Haveli Special Paneer">
+                        <span class="sig-badge">Chef Special</span>
+                        <span class="sig-price">₹180</span>
+                    </div>
+                    <div class="sig-info">
+                        <span class="sig-type-tag veg">🟢 Veg</span>
+                        <h3 class="sig-title">Haveli Special Paneer</h3>
+                        <p class="sig-desc">Fresh cottage cheese cubes simmered in our signature rich golden gravy with cashews, butter, and secret aromatic spices.</p>
+                        <a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="sig-order-btn">Order on Zomato 🛒</a>
+                    </div>
+                </div>
+                
+                <!-- Dish 3 -->
+                <div class="sig-card glass reveal reveal-right">
+                    <div class="sig-img-box">
+                        <img src="assets/images/food/chicken_biryani.png" alt="Chicken Leg Biryani">
+                        <span class="sig-badge">Royal Treat</span>
+                        <span class="sig-price">₹170</span>
+                    </div>
+                    <div class="sig-info">
+                        <span class="sig-type-tag non-veg">🔴 Non-Veg</span>
+                        <h3 class="sig-title">Chicken Leg Biryani</h3>
+                        <p class="sig-desc">Succulent chicken leg pieces marinated in thick curd spices and layered under fragrant saffron-infused basmati rice.</p>
+                        <a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="sig-order-btn">Order on Zomato 🛒</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Zomato Online Delivery Promo Section -->
+    <section class="section" id="delivery-promo">
+        <div class="section-container">
+            <div class="delivery-promo-card glass reveal reveal-scale">
+                <div class="promo-split">
+                    <div>
+                       <div class="promo-badge">
+                           <span></span> Fresh & Hot
+                       </div>
+                       <h2 class="promo-title">Craving Royal Flavors at Home?</h2>
+                       <p class="promo-desc">Get the majestic taste of Haveli's spices delivered straight to your home. We partner with Zomato to ensure your food is packed with double hygiene shields and arrives steaming hot in minutes.</p>
+                       
+                       <div class="promo-highlights">
+                           <div class="high-item">
+                               <div class="high-icon">🛵</div>
+                               <div class="high-text">
+                                   <h4>Superfast Delivery</h4>
+                                   <p>Average delivery in 25 mins</p>
+                               </div>
+                           </div>
+                           <div class="high-item">
+                               <div class="high-icon">🧼</div>
+                               <div class="high-text">
+                                   <h4>Safe & Hygienic</h4>
+                                   <p>Sanitized double-seal boxes</p>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="btn-zomato-huge">
+                           Order Now on Zomato 🔴
+                       </a>
+                    </div>
+                    
+                    <div class="promo-illustration">
+                       <div class="delivery-glass-card glass">
+                           <img src="assets/images/interior/unnamed (13).jpg" alt="Haveli Cozy Interior Seating">
+                           <div class="floating-delivery-badge glass">
+                               <span style="font-size: 1.5rem;">🔥</span>
+                               <div>
+                                   <h4 style="font-size: 0.85rem; font-weight:600; font-family:'Outfit', sans-serif;">Piping Hot</h4>
+                                   <p style="font-size: 0.65rem; color: var(--text-muted); font-family:'Outfit', sans-serif;">From Kitchen to Table</p>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Royal Guest Testimonials Section -->
+    <section class="section" id="testimonials">
+        <div class="section-container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-tag">Royalty Speaks</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="testimonial-slider reveal reveal-scale">
+                <div class="testimonial-track">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                       <div class="testimonial-card glass">
+                           <div class="stars-rating">★★★★★</div>
+                           <p class="review-text">"The Chicken Dehati and garlic naan here are absolutely out of this world! It has become our go-to spot in Phulwarisharif. The glass cabin seating is incredibly beautiful and perfect for families."</p>
+                           <div class="reviewer-meta">
+                               <div class="reviewer-avatar">AS</div>
+                               <div class="reviewer-details">
+                                   <h4 class="reviewer-name">Amit Sharma</h4>
+                                   <span class="reviewer-tag">Local Guide (Google Review)</span>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                       <div class="testimonial-card glass">
+                           <div class="stars-rating">★★★★★</div>
+                           <p class="review-text">"We ordered Haveli Special Paneer and Jeera Rice online on Zomato. The food was delivered piping hot, smelling of fresh ghee and masalas. The packaging was double-sealed. Highly recommend ordering!"</p>
+                           <div class="reviewer-meta">
+                               <div class="reviewer-avatar">RK</div>
+                               <div class="reviewer-details">
+                                   <h4 class="reviewer-name">Riya Kumari</h4>
+                                   <span class="reviewer-tag">Verified Zomato Customer</span>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                       <div class="testimonial-card glass">
+                           <div class="stars-rating">★★★★★</div>
+                           <p class="review-text">"I celebrated my son's birthday in their Cozy Celebration Zone. The staff decorated the booth beautifully, and their hospitality is truly royal. Extremely affordable premium dining in Patna!"</p>
+                           <div class="reviewer-meta">
+                               <div class="reviewer-avatar">VS</div>
+                               <div class="reviewer-details">
+                                   <h4 class="reviewer-name">Vikram Singh</h4>
+                                   <span class="reviewer-tag">Family Diner</span>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                
+                <!-- Dots Indicator -->
+                <div class="slider-dots">
+                   <div class="dot active"></div>
+                   <div class="dot"></div>
+                   <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Map & Contact Section -->
+    <section class="section" id="location">
+        <div class="section-container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-tag">Find Us</span>
+                <h2 class="section-title">Directions & Contact</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Map wrapper -->
+                <div class="map-wrapper glass reveal reveal-scale">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899.7022379276275!2d85.05518347812593!3d25.578022139023126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a977e63c561d%3A0xa68b3c31bd34634f!2sHaveli%20Restaurant!5e0!3m2!1sen!2sin!4v1782046944004!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <!-- Info cards -->
+                <div class="contact-info-card glass reveal reveal-up">
+                    <div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-details">
+                                <h4>Our Address</h4>
+                                <p>Inorbit apartment, opp electric office in maurya vihar Near Bmp 16, khagaul lakh, phulwarisharif road, Khagaul, Patna, Bihar 801105</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div class="contact-item-details">
+                                <h4>Call For Order / Booking</h4>
+                                <p><a href="tel:07281092285">07281092285</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">💰</div>
+                            <div class="contact-item-details">
+                                <h4>Average Dining Cost</h4>
+                                <p>₹200–400 per person <br><small style="color: var(--text-muted); font-size: 0.75rem;">(Reported by 33 people on Google Maps)</small></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🕒</div>
+                            <div class="contact-item-details">
+                                <h4>Operating Hours</h4>
+                                <p>Monday – Sunday: 11:00 AM – 10:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; font-size: 1rem;">Follow Us</h4>
+                        <div class="contact-socials">
+                            <a href="https://instagram.com/_beat_labs" target="_blank" class="social-circle" aria-label="Follow Haveli on Instagram">📸</a>
+                            <a href="https://beatlabs.oneapp.dev" target="_blank" class="social-circle" aria-label="Visit BeatLabs Web">🌐</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Zomato Order Trigger (FAB on bottom-left) -->
+    <a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="zomato-fab" id="zomato-fab" aria-label="Order Food Online on Zomato">
+        <!-- Delivery bag SVG -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+        </svg>
+    </a>
+
+    <!-- 12. Floating Genie Reservation Trigger (FAB) -->
+    <div class="genie-fab" id="genie-fab" aria-label="Summon Table Reservation Menu">
+        <!-- Genie lamp SVG -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25,55 C25,50 35,45 42,45 C48,45 50,42 50,38 C50,32 40,32 40,25 C40,18 50,12 50,5 C50,12 60,18 60,25 C60,32 50,32 50,38 C50,42 52,45 58,45 C65,45 75,50 75,55 C75,68 62,70 50,70 C38,70 25,68 25,55 Z" fill="none" stroke="currentColor" stroke-width="4"/>
+            <path d="M50,70 L50,85 L35,90 L65,90 L50,85 Z" fill="currentColor"/>
+            <circle cx="50" cy="25" r="4" fill="currentColor"/>
+            <path d="M72,50 C80,48 85,55 85,62 C85,69 78,70 72,67" fill="none" stroke="currentColor" stroke-width="4"/>
+        </svg>
+    </div>
+
+    <!-- 13. Genie Reservation Drawer Overlay -->
+    <div class="genie-drawer-overlay" id="genie-overlay">
+        <div class="genie-drawer glass">
+            <div class="genie-drawer-header">
+                <h3 class="genie-drawer-title brand-font">Table Reservation</h3>
+                <button class="genie-drawer-close" id="genie-close">&times;</button>
+            </div>
+            <form class="reservation-form" id="genie-reservation-form">
+                <div class="form-group">
+                    <label for="reserve-name">Your Name</label>
+                    <input type="text" id="reserve-name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-phone">Phone Number</label>
+                    <input type="tel" id="reserve-phone" class="form-control" placeholder="07281-092285" pattern="[0-9]{10,12}" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-guests">Number of Guests</label>
+                    <select id="reserve-guests" class="form-control" required>
+                        <option value="" disabled selected>Select guest count</option>
+                        <option value="1-2">1 - 2 Guests</option>
+                        <option value="3-4">3 - 4 Guests</option>
+                        <option value="5-7">5 - 7 Guests</option>
+                        <option value="8+">8+ Family Feast</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-datetime">Preferred Date & Time</label>
+                    <input type="datetime-local" id="reserve-datetime" class="form-control" required>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; margin-bottom: 1rem; text-align: center;">Note: Submitting this form will open your dialer to call Haveli Restaurant and confirm your table.</p>
+                <button type="submit" class="submit-btn">Call to Confirm Booking 📞</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 14. Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- 15. Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="nav-brand" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 28px; height: 28px; fill: var(--primary);">
+                        <path d="M50,15 C68,15 76,28 78,35 C80,31 85,28 90,28 C87,42 87,58 90,75 C70,75 65,70 50,75 C35,70 30,75 10,75 C13,58 13,42 10,28 C15,28 20,31 22,35 C24,28 32,15 50,15 Z" fill="currentColor"/>
+                    </svg>
+                    <div class="brand-name">
+                        HAVELI
+                        <span class="brand-subtitle">Restaurant</span>
+                    </div>
+                </a>
+                <p>Bringing you the finest dining experience with premium aesthetics, cozy party booths, and rich mouthwatering recipes in Khagaul, Patna.</p>
+            </div>
+            
+            <div>
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Interactive Menu</a></li>
+                    <li><a href="devs.html">Our Developers</a></li>
+                    <li><a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" style="color: #ff4d5a; text-shadow: 0 0 5px rgba(255,77,90,0.2);">Order on Zomato 🔴</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="footer-title">Our Menu Highlights</h3>
+                <ul class="footer-links">
+                    <li><a href="menu.html?cat=starters">Royal Starters</a></li>
+                    <li><a href="menu.html?cat=desiSwad">Desi Swad Curries</a></li>
+                    <li><a href="menu.html?cat=chickenSpecial">Egg & Chicken Special</a></li>
+                    <li><a href="menu.html?cat=tandoor">Tandoor Factory</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="footer-title">Contact Info</h3>
+                <div class="footer-contact-item">
+                    <span>📍</span>
+                    <p>Khagaul, Patna, Bihar 801105</p>
+                </div>
+                <div class="footer-contact-item">
+                    <span>📞</span>
+                    <p><a href="tel:07281092285">07281092285</a></p>
+                </div>
+                <div class="footer-contact-item">
+                    <span>✉️</span>
+                    <p><a href="mailto:info@havelipatna.com">info@havelipatna.com</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2026 Haveli Restaurant. All Rights Reserved.
+            </div>
+            <div class="footer-credit">
+                Built With ❤️ by <a href="https://beatlabs.oneapp.dev" target="_blank" rel="noopener noreferrer">BeatLabs</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

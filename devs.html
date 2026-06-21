@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers | BeatLabs | Haveli Restaurant</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Meet the developer team BeatLabs who crafted this premium glassmorphism dining website for Haveli Restaurant in Patna.">
+    <meta name="keywords"
+        content="BeatLabs, Web Developers, Website Designers, Haveli Restaurant Website, Patna Web Developers, Premium Web Design">
+    <meta name="author" content="BeatLabs">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- 1. Page Loader Overlay -->
+    <div id="page-loader" class="loader-overlay">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M50,15 C68,15 76,28 78,35 C80,31 85,28 90,28 C87,42 87,58 90,75 C70,75 65,70 50,75 C35,70 30,75 10,75 C13,58 13,42 10,28 C15,28 20,31 22,35 C24,28 32,15 50,15 Z"
+                        fill="none" stroke="currentColor" stroke-width="4" />
+                    <rect x="42" y="55" width="16" height="20" rx="8" fill="none" stroke="currentColor"
+                        stroke-width="3" />
+                </svg>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Live Glassmorphism Backdrop -->
+    <div class="backdrop-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- 3. Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="nav-brand">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M50,15 C68,15 76,28 78,35 C80,31 85,28 90,28 C87,42 87,58 90,75 C70,75 65,70 50,75 C35,70 30,75 10,75 C13,58 13,42 10,28 C15,28 20,31 22,35 C24,28 32,15 50,15 Z"
+                        fill="currentColor" />
+                    <rect x="44" y="58" width="12" height="17" rx="6" fill="#070608" />
+                </svg>
+                <div class="brand-name">
+                    HAVELI
+                    <span class="brand-subtitle">Restaurant</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="devs.html" class="active">Developers</a></li>
+                <li><a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="nav-btn-zomato">Order Online 🔴</a></li>
+                <li><a href="tel:07281092285" class="nav-btn">Book Table</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 4. Developer Page Content -->
+    <section class="dev-page-container section">
+        <div class="section-container">
+            <div class="dev-hero reveal reveal-fade">
+                <span class="dev-subtitle">Digital Architects</span>
+                <h1 class="dev-title brand-font">Meet BeatLabs</h1>
+                <div class="section-divider" style="margin-bottom: 2rem;"></div>
+                <p class="dev-intro">We are a team of passionate designers, frontend wizards, and creative engineers. We
+                    specialize in crafting lightning-fast, high-end, responsive web apps with top-tier visual
+                    aesthetics.</p>
+            </div>
+
+            <!-- Unified Team Card -->
+            <div class="dev-grid" style="display: flex; justify-content: center; max-width: 600px; margin: 0 auto;">
+                <div class="dev-card glass reveal reveal-scale" style="width: 100%;">
+                    <div class="dev-avatar-wrapper" style="margin: 0 auto 1.5rem auto; width: 120px; height: 120px;">
+                        <div class="dev-avatar"
+                            style="background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; font-weight: 800; width: 100%; height: 100%; border-radius: 50%;">
+                            BL
+                        </div>
+                    </div>
+                    <h3 class="dev-name brand-font" style="font-size: 2.2rem; margin-bottom: 0.2rem;">BeatLabs</h3>
+                    <p class="dev-role" style="letter-spacing: 2px;">Creative Development Team</p>
+                    <p class="dev-bio"
+                        style="font-size: 0.95rem; line-height: 1.6; max-width: 480px; margin: 1rem auto; color: var(--text-muted);">
+                        We are a collective of digital craftsmen building high-performance web applications, luxury
+                        UI/UX systems, and custom brand websites. Focused on speed, aesthetics, and premium
+                        interactions.</p>
+
+                    <div
+                        style="display: flex; flex-direction: column; gap: 12px; margin: 2rem 0; align-items: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <span style="color: var(--text-light); font-size: 0.95rem;">📸 Instagram: <a
+                                href="https://instagram.com/_beat_labs" target="_blank"
+                                style="color: var(--primary); font-weight: 600;">@_beat_labs</a></span>
+                        <span style="color: var(--text-light); font-size: 0.95rem;">🌐 Agency Website: <a
+                                href="https://beatlabs.oneapp.dev" target="_blank"
+                                style="color: var(--primary); font-weight: 600;">beatlabs.oneapp.dev</a></span>
+                        <span style="color: var(--text-light); font-size: 0.95rem;">✉️ Business Email: <a
+                                href="mailto:beatwave790@gmail.com"
+                                style="color: var(--primary); font-weight: 600;">beatwave790@gmail.com</a></span>
+                    </div>
+
+                    <div class="dev-socials" style="display: flex; justify-content: center; gap: 20px;">
+                        <a href="https://instagram.com/_beat_labs" target="_blank" class="dev-social-link"
+                            aria-label="Instagram" style="font-size: 1.3rem;">📸</a>
+                        <a href="https://beatlabs.oneapp.dev" target="_blank" class="dev-social-link"
+                            aria-label="Website" style="font-size: 1.3rem;">🌐</a>
+                        <a href="mailto:beatwave790@gmail.com" class="dev-social-link" aria-label="Email"
+                            style="font-size: 1.3rem;">✉️</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating Zomato Order Trigger (FAB on bottom-left) -->
+    <a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" class="zomato-fab" id="zomato-fab" aria-label="Order Food Online on Zomato">
+        <!-- Delivery bag SVG -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+        </svg>
+    </a>
+
+    <!-- 5. Floating Genie Reservation Trigger (FAB) -->
+    <div class="genie-fab" id="genie-fab" aria-label="Summon Table Reservation Menu">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M25,55 C25,50 35,45 42,45 C48,45 50,42 50,38 C50,32 40,32 40,25 C40,18 50,12 50,5 C50,12 60,18 60,25 C60,32 50,32 50,38 C50,42 52,45 58,45 C65,45 75,50 75,55 C75,68 62,70 50,70 C38,70 25,68 25,55 Z"
+                fill="none" stroke="currentColor" stroke-width="4" />
+            <path d="M50,70 L50,85 L35,90 L65,90 L50,85 Z" fill="currentColor" />
+            <circle cx="50" cy="25" r="4" fill="currentColor" />
+            <path d="M72,50 C80,48 85,55 85,62 C85,69 78,70 72,67" fill="none" stroke="currentColor" stroke-width="4" />
+        </svg>
+    </div>
+
+    <!-- 6. Genie Reservation Drawer Overlay -->
+    <div class="genie-drawer-overlay" id="genie-overlay">
+        <div class="genie-drawer glass">
+            <div class="genie-drawer-header">
+                <h3 class="genie-drawer-title brand-font">Table Reservation</h3>
+                <button class="genie-drawer-close" id="genie-close">&times;</button>
+            </div>
+            <form class="reservation-form" id="genie-reservation-form">
+                <div class="form-group">
+                    <label for="reserve-name">Your Name</label>
+                    <input type="text" id="reserve-name" class="form-control" placeholder="Enter your full name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-phone">Phone Number</label>
+                    <input type="tel" id="reserve-phone" class="form-control" placeholder="07281-092285"
+                        pattern="[0-9]{10,12}" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-guests">Number of Guests</label>
+                    <select id="reserve-guests" class="form-control" required>
+                        <option value="" disabled selected>Select guest count</option>
+                        <option value="1-2">1 - 2 Guests</option>
+                        <option value="3-4">3 - 4 Guests</option>
+                        <option value="5-7">5 - 7 Guests</option>
+                        <option value="8+">8+ Family Feast</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-datetime">Preferred Date & Time</label>
+                    <input type="datetime-local" id="reserve-datetime" class="form-control" required>
+                </div>
+                <p
+                    style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; margin-bottom: 1rem; text-align: center;">
+                    Note: Submitting this form will open your dialer to call Haveli Restaurant and confirm your table.
+                </p>
+                <button type="submit" class="submit-btn">Call to Confirm Booking 📞</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 7. Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="nav-brand" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        style="width: 28px; height: 28px; fill: var(--primary);">
+                        <path
+                            d="M50,15 C68,15 76,28 78,35 C80,31 85,28 90,28 C87,42 87,58 90,75 C70,75 65,70 50,75 C35,70 30,75 10,75 C13,58 13,42 10,28 C15,28 20,31 22,35 C24,28 32,15 50,15 Z"
+                            fill="currentColor" />
+                    </svg>
+                    <div class="brand-name">
+                        HAVELI
+                        <span class="brand-subtitle">Restaurant</span>
+                    </div>
+                </a>
+                <p>Bringing you the finest dining experience with premium aesthetics, cozy party booths, and rich
+                    mouthwatering recipes in Khagaul, Patna.</p>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Interactive Menu</a></li>
+                    <li><a href="devs.html">Our Developers</a></li>
+                    <li><a href="https://www.zomato.com/patna/haveli-restaurant-2-phulwari-sharif/order?v=o2" target="_blank" style="color: #ff4d5a; text-shadow: 0 0 5px rgba(255,77,90,0.2);">Order on Zomato 🔴</a></li>
+                    <li><a href="index.html#about">Our Story</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Our Menu Highlights</h3>
+                <ul class="footer-links">
+                    <li><a href="menu.html?cat=starters">Royal Starters</a></li>
+                    <li><a href="menu.html?cat=desiSwad">Desi Swad Curries</a></li>
+                    <li><a href="menu.html?cat=chickenSpecial">Egg & Chicken Special</a></li>
+                    <li><a href="menu.html?cat=tandoor">Tandoor Factory</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Contact Info</h3>
+                <div class="footer-contact-item">
+                    <span>📍</span>
+                    <p>Khagaul, Patna, Bihar 801105</p>
+                </div>
+                <div class="footer-contact-item">
+                    <span>📞</span>
+                    <p><a href="tel:07281092285">07281092285</a></p>
+                </div>
+                <div class="footer-contact-item">
+                    <span>✉️</span>
+                    <p><a href="mailto:info@havelipatna.com">info@havelipatna.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2026 Haveli Restaurant. All Rights Reserved.
+            </div>
+            <div class="footer-credit">
+                Built With ❤️ by <a href="https://beatlabs.oneapp.dev" target="_blank"
+                    rel="noopener noreferrer">BeatLabs</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
