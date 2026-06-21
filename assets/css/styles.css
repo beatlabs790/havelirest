@@ -2344,6 +2344,27 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
     }
+
+    /* Specialties & Signature Grid Stacking */
+    .specs-grid, .signature-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .promo-split {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    
+    .delivery-promo-card {
+        padding: 2.5rem 1.8rem;
+    }
+    
+    .floating-delivery-badge {
+        bottom: -10px;
+        left: 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2429,6 +2450,46 @@ footer {
     .dev-title {
         font-size: 2.2rem;
     }
+
+    /* Menu Tabs Alignment */
+    .menu-tabs-wrapper {
+        justify-content: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .testimonial-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .review-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .sticky-banner-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        gap: 12px;
+    }
+    
+    .sticky-banner-text {
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    /* FAB Sizing Adjustments for Mobile */
+    .genie-fab, .zomato-fab {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+    }
+    .genie-fab { right: 20px; }
+    .zomato-fab { left: 20px; }
+    
+    .genie-fab svg { width: 26px; height: 26px; }
+    .zomato-fab svg { width: 24px; height: 24px; }
 }
 
 @media (max-width: 480px) {
@@ -2459,5 +2520,40 @@ footer {
     .filter-btn {
         padding: 0.5rem 1rem;
         font-size: 0.75rem;
+    }
+
+    /* Menu Grid and Items Polishing */
+    .menu-list-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-list-item {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .menu-item-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .menu-item-dots {
+        display: none;
+    }
+    
+    .promo-highlights {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .sig-img-box {
+        height: 200px;
+    }
+    
+    .delivery-glass-card {
+        max-width: 280px;
     }
 }
